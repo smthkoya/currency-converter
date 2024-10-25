@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="description">
+          <h2>Currency Converter</h2>
+          <span
+            >Check live rates, set rate alerts, receive notifications and
+            more.</span
+          >
+        </div>
+        <div class="currency">
+          <div class="amount total">
+            <h3>Amount</h3>
+            <div class="country">
+              <img
+                src="https://flagsapi.com/SG/flat/64.png"
+                alt=""
+                id="input-img"
+              />
+              <select id="input-select" name="">
+                <option value="">SGD</option>
+              </select>
+              <input type="number" name="" id="amount-input" />
+            </div>
+          </div>
+          <div class="line">
+            <hr />
+            <i
+              class="fa-solid fa-arrow-right-arrow-left fa-rotate-90"
+              id="convert-btn"
+            ></i>
+            <hr />
+          </div>
+          <div class="converted-amount total">
+            <h3>Converted Amount</h3>
+            <div class="country">
+              <img
+                src="https://flagsapi.com/US/flat/64.png"
+                id="output-img"
+                alt=""
+              />
+              <select name="" id="output-select">
+                <option value="">USD</option>
+              </select>
+              <input type="number" name="" id="amount-output" />
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">
+          <h3>Indicative Exchange Rate</h3>
+          <span>1 SGD = 0.7367 USD</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1e411deb09.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
